@@ -1,0 +1,27 @@
+<?php
+//include_once 
+//include_once 
+
+
+class FileIChessmen implements IChessmen
+{
+    var $filename;
+
+    function __construct($filename) 
+    {
+        $this->filename = $filename;
+    }
+
+    function  save($figures)
+    {
+        file_put_contents($this->filename,$figures);
+    }
+
+    function load(){
+        
+        return file_get_contents($this->filename);
+    }
+
+}
+
+?>

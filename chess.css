@@ -1,0 +1,25 @@
+.board{
+    border: 20px solid;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.square{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.black {
+    background-color:dimgrey;
+}
+.white {
+    background-color: aqua;
+}
+.figure{
+    font-size: 60px;
+    cursor: pointer;
+}
